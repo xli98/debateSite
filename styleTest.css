@@ -1,0 +1,18 @@
+p {
+	color: #008080;
+}
+a {
+	color: #ffa500;
+}
+
+h1 {
+	background-color: #c70039;
+	padding: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,82 @@
+cached sidebar
+
+css:
+
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -100px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    background-color: #4f7ebf;
+}
+
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 250px;
+}
+
+#events {
+    top: 310px;
+}
+
+#pictures {
+    top: 370px;
+}
+
+#contacts {
+    top: 430px;
+}
+
+
+HTML: 
+
+<!-- this is copied code-->
+	<!-- responsible for the sidebar -->
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="#" id="about">About</a>
+	  <a href="events.html" id="events">Events</a>
+	  <a href="#" id="pictures">Pictures</a>
+	  <a href="contacts.html" id="contacts">Contacts</a>
+	</div>
+	<!-- this is copied code-->
+
+
+
+Cached background: 
+
+<!--<div id="myBackground" class="background">
+		<img src="./background.jpg" alt="background"/>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" language="JavaScript">
+	  function set_body_height() { // set body height = window height
+	    $('#myBackground').height($(window).height());
+	  }
+	  $(document).ready(function() {
+	    $(window).bind('resize', set_body_height);
+	    set_body_height();
+	  });
+	</script>-->
+
+	<!-- $('.myImages img').load(function(){
+        var height = $(this).height();
+        var width = $(this).width();
+        console.log('widthandheight:',width,height);
+        if(width>height){
+            $(this).addClass('wide-img');
+        }else{
+            $(this).addClass('tall-img');
+        }
+    });-->

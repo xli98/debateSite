@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>JHU Debate</title>
+    <link rel="stylesheet" href="styleMain.css">
+
+    <!-- Sidebar -->
+	<div class="sidebar sidebar-open animate-left" style="display:none" id="mySidebar">
+	  <button id="button-close" onclick="sidebar_close()" class="bar-item ">&times;</button>
+	  <a href="#" class="bar-item buttonBarItem">Media</a>
+	  <a href="#" class="bar-item buttonBarItem">About Us</a>
+	  <a href="#" class="bar-item buttonBarItem">Contact</a>
+	</div>
+
+	<!-- Page Content -->
+	<div id="main">
+		<div class="sidebar-closed" id="button-close">
+		  <button id="openNav" class="sidebar bar-button" onclick="sidebar_open()">
+		  	<img src="./logo.png" class="logo" alt="logo" />
+		  	<h1>☰</h1>
+		  	</button>
+		  
+		  <div class="main-header">
+		  		<h1 class = "main-title"> The Johns Hopkins Undergraduate Deabte Council </h>
+		  </div>
+		</div>
+
+
+		<div class="container"><!--for lack of better name as of now-->
+		  	<p>testing.</p>
+		  	
+		  	
+		 </div>
+	</div>
+
+	<script>
+	function sidebar_open() {
+	    document.getElementById("main").style.marginLeft = "20%";
+		document.getElementById("mySidebar").style.width = "20%";
+		document.getElementById("mySidebar").style.display = "block";
+		document.getElementById("openNav").style.display = 'none';
+	}
+	function sidebar_close() {
+	    document.getElementById("main").style.marginLeft = "0%";
+		document.getElementById("mySidebar").style.display = "none";
+		document.getElementById("openNav").style.display = "inline-block";
+	}
+	</script>
+
+</head>
+
+</html>

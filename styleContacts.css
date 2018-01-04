@@ -1,0 +1,23 @@
+:root{
+}
+
+.barrier{
+	margin-top: 10%;
+}
+
+.center{
+	width: 655px;
+    margin: auto;
+}
+
+.comment{
+	width: 100%;
+}
+
+.submit{
+	float:right;
+	background-color: #3089C0;
+	height: 30px;
+	width: 100%;
+
+}
