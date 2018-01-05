@@ -5,11 +5,30 @@
 
 		<title>JHU debate</title>
 	    <link rel="stylesheet" href="styleMain-one.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+		(function($) {          
+		    $(document).ready(function(){                    
+		        $(window).scroll(function(){                          
+		            if ($(this).scrollTop() > 1) {
+		               	$('#topnav').css('background-color','#444');
+		               	//$('#topnav').css('display', 'none');
+		               	//$('#topnavscroll').fadeIn(500);
 
+		            } else {
+		            	//$('#topnavscroll').fadeOut(500);
+		            	//$('#topnav').css('display', 'inline-block');
+		                $('.topnav').css('background-color','transparent');
+		            }
+		        });
+		    });
+		})(jQuery);
+		</script>
 
 	    <style>
 			#bg {
-			    background: url(background-bnw.jpg);
+			    background: url(background.jpg);
 			    height: 800px;
 			    text-indent:-9999px;
 				-moz-background-size:cover; 
@@ -34,26 +53,28 @@
 		</div>
 
 		<div class="topnav" id="topnav">
-		  <a href="about.html" id="about">About</a>
-		  <a href="events.html" id="events">Events</a>
-		  <a href="pictures.html" id="media">Medias</a>
-		  <a href="contacts.html" id="contacts">Contacts</a>
+			<a href="about.html" id="about">About</a>
+			<a href="events.html" id="events">Events</a>
+			<a href="main-one.html"> <img src="logoinv.png" class="logo" alt="logo"/></a>
+			<a href="pictures.html" id="media">Medias</a>
+			<a href="contacts.html" id="contacts">Contacts</a>
 		</div>
 
 
 	</head>
 
 	<body>
-		<div class= "bottom">
-			<a href="https://www.facebook.com/HopkinsDebate/"><img src="./FBlogo.png" class="soclogos"></a>
-			<br>jhudebate@gmail.com
-		</div>
-		<!--<div class="buttonnav" id="buttonnav">
+		<div class="buttonnav" id="buttonnav">
 	  		<a href="about.html" id="aboutbot">About</a> <p>hello</p><br>
 			<a href="events.html" class= "buttonnavright" id="eventsbot">Events</a> <p>hello</p> <br>
 			<a href="pictures.html" id="picturesbot">Pictures</a> <p>hello</p><br>
 		  	<a href="contacts.html" class= "buttonnavright" id="contactsbot">Contacts</a> <p>hello</p><br>
-		</div>-->
+		</div>
+
+		<div class= "bottom">
+			<a href="https://www.facebook.com/HopkinsDebate/"><img src="./FBlogo.png" class="soclogos"></a>
+			<br>jhudebate@gmail.com
+		</div>
 
 	</body>
 </html>

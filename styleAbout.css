@@ -1,0 +1,29 @@
+p{
+	text-align: center;
+	color: #7A7A7A;
+	width: 50%;
+}
+.topnav{
+	background-color: #444;
+}
+
+.words{
+	margin-top: 50px; 
+	padding: 5%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.intro{
+}
+
+div{
+		border: 5px solid #000;
+
+}

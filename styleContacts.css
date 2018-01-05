@@ -5,6 +5,10 @@
 	margin-top: 10%;
 }
 
+.topnav{
+	background-color: #444;
+}
+
 .center{
 	width: 655px;
     margin: auto;
@@ -15,14 +19,14 @@
 }
 
 #sendemail{
-	border: 3px dashed #3089C0;
+	border: 3px dashed var(--hopkinsBlue);
 	padding: 50px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .submit{
 	float:right;
-	background-color: #3089C0;
+	background-color: var(--hopkinsBlue);
 	height: 30px;
 	width: 20%;
 	border-radius: 10px;
@@ -31,6 +35,7 @@
 
 p{
 	font-size: 40px;
+	font-family: helvetica;
 	color: var(--darkGray);
 	opacity: 0.6;
 	text-align: center;

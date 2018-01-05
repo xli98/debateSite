@@ -2,7 +2,7 @@
 	--orange: #ff742a;
 	--darkGray: #444;
 	--lightGray: #f2f2f2;
-	--hopkinsBlue: #4d7fc0;
+	--hopkinsBlue: #3089C0;
 	/*background-color: var(--lightGray);*/
 	overflow: scroll;
 	--headerHeight: 50px;
@@ -112,4 +112,9 @@
 	color: white;
 	font-size: 15px;
 	text-align: center;
+}
+
+.topnav a.active {
+    background-color: var(--hopkinsBlue);
+    color: white;
 }

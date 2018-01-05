@@ -10,6 +10,10 @@
 	margin:-10px -10px -10px -10px;
 }
 
+/*div{
+  border: 3px solid var(--hopkinsBlue);
+}*/
+
 .image{
 	position: relative; 
    	width: 100%;
@@ -36,7 +40,6 @@
    position: absolute; 
    top: 68%; 
    left: 3%; 
-   width: 100%; 
    color: var(--hopkinsBlue);
    font-size: 180%;
    font-family: "Impact"
@@ -44,11 +47,14 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: var(--darkGray);
     overflow: hidden;
-    padding-left: 20%;
+    padding-left: 15%;
     position: fixed;
     width: 100%;
+    opacity: 0.9;
+    float:left;
+    margin:auto;
+    display:inline-block;
 
     /*to fix navbar going behind the background image*/
     z-index:1000;
@@ -59,9 +65,10 @@
 
 }
 
+
 /* Style the links inside the navigation bar */
 .topnav a {
-	display:inline-block;
+	  display:inline-block;
     float: left;
     color: var(--lightGray);
     text-align: center;
@@ -77,14 +84,17 @@
     color: black;
 }
 
+.topnav a.active {
+    background-color: var(--hopkinsBlue);
+    color: white;
+}
+
+/*transform: scale(2.8);*/
 .logo{
-	height: 20%;
-	/*transform: scale(2.8);*/
+	height: 50px;
 	border-radius: 15px;
-	/*background: var(--lightGray);*/
-	background: var(--orange);
+	/*background: var(--orange);*/
 	width: 50px;
-	padding: none;
 }
 
 .soclogos{
@@ -97,10 +107,12 @@
   color: white;
   font-size: 15px;
   text-align: center;
+  width: 100%;
+  display: inline-block;
+
 }
-/*
+
 .buttonnav{
-	height: 100%;
 	margin: 10%;
 }
 
@@ -109,10 +121,11 @@
 }
 
 .buttonnav a{
-	border: 3px dashed var(--orange);
+	/*border: 3px dashed var(--orange);*/
 	padding: 10% 10%;
 	font-size: 30px;
-
+  background-color: var(--hopkinsBlue);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 	
 }
 
@@ -121,4 +134,4 @@
     background-color: #ddd;
     color: black;
     
-}*/
+}
