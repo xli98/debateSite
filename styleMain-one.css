@@ -1,14 +1,25 @@
 :root{
 	--orange: #ff742a;
 	--darkGray: #444;
-	--lightGray: #f2f2f2;
+	--lightGray: #e2e2e2;
 	--hopkinsBlue: #4d7fc0;
-	/*background-color: var(--lightGray);*/
+	background-color: var(--lightGray);*/
 	overflow: scroll;
 	--headerHeight: 50px;
 	/*--buttonStart: 100;*/
 	margin:-10px -10px -10px -10px;
 }
+
+@font-face {
+font-family: "ostrich-sans";
+src: url("fonts/Harabara.eot");
+src: 
+url("fonts/OstrichSans-Black.woff") format("woff"),
+url("fonts/OstrichSans-Black.otf") format("opentype"),
+url("fonts/OstrichSans-Black.svg#filename") format("svg");
+  }
+
+
 
 /*div{
   border: 3px solid var(--hopkinsBlue);
@@ -42,7 +53,8 @@
    left: 3%; 
    color: var(--hopkinsBlue);
    font-size: 180%;
-   font-family: "Impact"
+   font-family: 'OstrichSans-Black',  "Impact", sans-serif;
+
 }
 
 /* Add a black background color to the top navigation */
@@ -53,6 +65,8 @@
     width: 100%;
     opacity: 0.9;
     float:left;
+
+    /*what*/
     margin:auto;
     display:inline-block;
 
@@ -77,6 +91,7 @@
     font-size: 20px;
 
 }
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -112,8 +127,18 @@
 
 }
 
+.wrapper{
+  padding: 100px;
+}
+
+body .buttonnav div{
+  height:300px;
+}
+
 .buttonnav{
-	margin: 10%;
+	margin: 0 10% 10% 10%;
+  background-color: #fff;
+
 }
 
 .buttonnavright{
@@ -121,17 +146,18 @@
 }
 
 .buttonnav a{
-	/*border: 3px dashed var(--orange);*/
+	border: 5px dotted var(--orange);
+  border-radius: 50px;
 	padding: 10% 10%;
 	font-size: 30px;
-  background-color: var(--hopkinsBlue);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  /*background-color: var(--hopkinsBlue);*/
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);*/
 	
 }
 
 
 .buttonnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
     
 }

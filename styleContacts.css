@@ -5,6 +5,11 @@
 	margin-top: 10%;
 }
 
+.wrapper{
+	padding: 0 5% 5% 5%;
+	background-color: #fff;
+}
+
 .topnav{
 	background-color: #444;
 }
@@ -35,7 +40,7 @@
 
 p{
 	font-size: 40px;
-	font-family: helvetica;
+   font-family: 'OstrichSans-Black',  "Impact", sans-serif;
 	color: var(--darkGray);
 	opacity: 0.6;
 	text-align: center;
