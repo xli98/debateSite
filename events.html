@@ -6,19 +6,72 @@
 		<title>JHU debate Media</title>
     	<link rel="stylesheet" href="styleAbout.css">
     	<link rel="stylesheet" href="styleMain-one.css">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+    	<style>
+		p {
+		  text-align: center;
+		  font-size: 60px;
+		  margin-top:100px;
+		  padding: 10%;
+
+		}
+
+		.clock{
+			width: 80%;
+			border: 5px solid #fff;
+		}
+		</style>
 
     	<div class="topnav" id="topnav">
-			<a class="active" href="about.html" id="about">About</a>
-			<a href="events.html" id="events">Event</a>
+			<a href="about.html" id="about">About</a>
+			<a class="active" href="events.html" id="events">Event</a>
 			<a href="main-one.html"> <img src="image/logoinv.png" class="logo" alt="logo"/></a>
 			<a href="pictures.html" id="media">Media</a>
 			<a href="contacts.html" id="contacts">Contact</a>
 		</div>
 
+
+
 	</head>
 
 	<body>
+
+
+		<!-- Display the countdown timer in an element -->
+		<div class="clock"><p id="demo"></p></div>
+
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Apr 22, 2018 15:37:25").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			  // Get todays date and time
+			  var now = new Date().getTime();
+
+			  // Find the distance between now an the count down date
+			  var distance = countDownDate - now;
+
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			  // Display the result in the element with id="demo"
+			  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+
+			  // If the count down is finished, write some text 
+			  if (distance < 0) {
+			    clearInterval(x);
+			    document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+		</script>
+
 
 		<div class= "bottom">
 		<a href="https://www.facebook.com/HopkinsDebate/"><img src="image/FBlogo.png" class="soclogos"></a>

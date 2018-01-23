@@ -128,7 +128,7 @@ url("fonts/OstrichSans-Black.svg#filename") format("svg");
 }
 
 .wrapper{
-  padding: 100px;
+  padding: 50px;
 }
 
 body .buttonnav div{
@@ -146,18 +146,25 @@ body .buttonnav div{
 }
 
 .buttonnav a{
-	border: 5px dotted var(--orange);
-  border-radius: 50px;
 	padding: 10% 10%;
 	font-size: 30px;
+  background-color: #ddd;
   /*background-color: var(--hopkinsBlue);*/
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);*/
 	
 }
 
+.buttonnav .l:hover{
+  border-left: 10px solid var(--orange);
+}
+
+.buttonnav .r:hover{
+  border-right: 10px solid var(--orange);
+
+}
 
 .buttonnav a:hover {
-  background-color: #ddd;
+  border-bottom: 10px solid var(--orange);
   color: black;
     
 }

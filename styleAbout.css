@@ -18,17 +18,22 @@ p{
 
 .words h1{
 	border-bottom: 5px solid var(--darkGray);
-	font-size: 50px;
+	font-size: 80px;
 	color:var(--darkGray);
     font-family: 'OstrichSans-Black',  "Impact", sans-serif;
 }
 
-.words h2{
+.thing1 div .thing2 div{
 	padding: 10%;
+
+}
+
+.words h2{
 	/*background-color: var(--hopkinsBlue);*/
 	border: 10px double var(--orange);
 	border-radius: 40px;
 	font-family: 'OstrichSans-Black',  "Impact", sans-serif;
+	font-size: 30px;
 }
 
 .left{
